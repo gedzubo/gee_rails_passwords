@@ -37,8 +37,14 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
+  # Testing framework [https://github.com/rspec/rspec-rails]
+  gem "rspec-rails", "~> 7.0.0"
+
   # Used to create test fixtures [https://github.com/thoughtbot/factory_bot_rails]
   gem "factory_bot_rails"
+
+  # Provides fake data [https://github.com/faker-ruby/faker]
+  gem "faker"
 end
 
 group :development do
@@ -47,6 +53,6 @@ group :development do
 end
 
 group :test do
-  # Testing framework [https://github.com/rspec/rspec-rails]
-  gem "rspec"
+  # Acceptance testing framework [https://github.com/teamcapybara/capybara]
+  gem "capybara"
 end
