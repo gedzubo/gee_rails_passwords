@@ -19,11 +19,16 @@
   </head>
 
   <body>
-    <header class="flex justify-between items-center">
-      <div>1</div>
-      <div>2</div>
+    <header class="flex justify-between items-center px-6 py-4 bg-slate-50">
+      <div class="flex space-x-4">
+        <%= link_to "Home", root_path %>
+        <%= link_to "Vaults", "#" %>
+      </div>
+      <div>
+        <%= link_to "Log Out", "#" %>
+      </div>
     </header>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container mx-auto mt-8 px-5 flex">
       <%= yield %>
     </main>
   </body>
